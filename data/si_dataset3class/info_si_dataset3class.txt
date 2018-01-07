@@ -1,0 +1,7 @@
+theft - Indicator of the presence of electricity theft (0: no fraud; 1: simple fraud: 2: complex fraud)
+i1 - Indicator of irregular consumption in comparison to the past
+i2_d - Indicator of irregular consumption pattern in comparison to the past (based on euclidean distance)
+i2_c - Indicator of irregular consumption pattern in comparison to the past (based on Pearson correlation)
+i3 - Indicator of irregular consumption in comparison to similar consumers
+i4_d - Indicator of irregular consumption pattern in comparison to similar consumers (based on euclidean distance)
+i4_c - Indicator of irregular consumption pattern in comparison to similar consumers (based on Pearson correlation)

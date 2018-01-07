@@ -1,0 +1,72 @@
+TPR:
+
+Fuzzy regular: [1 0 0 1 1 0 30] -> -1.0900
+
+Fuzzy balanced: [1 1 0 1 1 0 51] -> -1.3072
+
+Fuzzy fraud: [1 1 1 1 1 0 23] -> -1.4428
+
+Accuracy:
+
+Fuzzy regular: [1 0 0 1 1 0 83] -> 0.6367
+
+Fuzy balanced: [1 1 0 1 1 0 42] -> 0.5643
+
+Fuzzy fraud: [1 1 1 1 1 0 42] -> 0.5191
+
+
+Accuracy Anfis Regular: [1 1 1 0 1 1 ] -> 0.5934
+Accuracy Anfis Balanced: [1 1 1 1 1 1 ] -> 0.4839
+Accuracy Anfis Fraud: [1 1 1 1 1 0 ] -> 0.4665
+
+TPR Anfis regular: [0 1 1 0 1 1 ] -> -1.2306
+TPR Anfis balanced : [1 1 0 1 1 1 ] -> -1.5244
+TPR Anfis fraud: [1 1 1 1 1 1 ] -> -1.6173
+
+
+Accuracy MLP regular: [0 1 0 0 1 0 43 ] -> 0.5207
+Accuracy MLP balanced: [1 11 1 1 1 100 ] -> 0.3287
+Accuracy MLP fraud: [1 1 0 1 1 0 62] -> 0.4682
+
+TPR NN regular:  [0     1     1     1     1     0    94] -> -1.4041
+TPR NN balanced:  [1     1     0     1     1     0    89] -> -2.0179
+Fraud NN TPR:  [1     1     0     1     1     0    82] -> -1.5780
+
+experimentSum:
+ 
+BuildEnsemble, experimentSum:
+
+[0.2085    0.5940    0.5586    0.7797    0.2362    0.2257    0.2207    0.6626    0.6930]
+
+BuildEnsembleTPR, experimentSum:
+[0.5972    0.8892    0.2678    0.6939    0.8893    0.2660    0.2261    0.8255    0.9243] -> 0.3333
+
+buildEnsemble + experimentSumTPR:
+[0.6145    0.6055    0.2234    0.7986    0.9173    0.5124    0.2631    0.5710    0.8585] -> -1.9886
+
+BuildEnsembleTPR, experimentSumTPR:
+    [0.2881    0.8015    0.2796    0.1166    0.1457    0.3527    0.7881    0.8376    0.8150] -> -1.9935
+
+experimentHierarchic
+
+BuildEnsemble  experimentHierarchy [ 0.1686    0.6654    0.9986    0.6216    0.0275    0.0715    0.2420    0.4193    0.9367]->0.3579
+
+BuildEnsembleTPR  experimentHierarchy [ 0.5664    0.5965    0.2217    0.1024    0.0972         0    0.6759    0.2063    0.8090]->  0.3514
+
+BuildEnsemble  experimentHierarchyTPR [0.9698    0.9148    0.0179    0.4497    0.0852    0.2151    0.5401    0.7922    0.7501 ]->-1.9712
+
+BuildEnsembleTPR experimentHierarchicTPR:
+[0.6816    0.4851    0.8212    0.0541    0.6000    0.6283    0.3740    0.3541    0.2561] -> -1.6486
+
+
+Hierarchic new:
+
+buildEnsemble + experimenhHierarchich2:
+[0.9835    0.8909    0.0977    0.5911    0.8509    0.7177    0.8024    0.4679    0.1237    8.2284    9.8664   -5.6814    4.9946   -2.2569    5.2323    7.4524    3.9318    9.8607]-> 0.3355
+
+BuildEnsembleTPR  experimentHierarchic2 [   0.1519    0.6318    0.2934    0.8350    0.5522    0.9752    0.9619    0.0226    0.9880  0.5332    0.7644    0.5524 0.3813    0.7014    0.3476    0.5733    0.3985    0.9350]->    0.3383
+
+buildEnsemble+experimentHierarchic2TPR:
+[0.6137    0.3778    0.7760    0.4377    0.1874    0.0582    0.9838    0.8296    0.1275   -8.0295    9.5752 -1.6652    5.3055    2.3957   -9.4621    3.2444   -2.8939    7.9743] -> -1.9543
+
+BuildEnsembleTPR  experimentHierarchic2TPR [0.2752    0.7746    0.8246    0.1919    0.1369    0.6768    0.8261    0.4807    0.2637    0.2836    0.2706    0.3332   0.1060    0.0282    0.6033    0.9554    0.9883    0.3378 ]->   -1.9856
